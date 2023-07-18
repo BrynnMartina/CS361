@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+  <style>
+    .popular-books {
+      margin-top: 30px;
+      text-align: left;
+    }
+    .book {
+      display: inline-block;
+      margin: 10px;
+    }
+    .book-image {
+      width: 150px;
+      height: 200px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Home Page</h1>
+
+  <button onclick="window.location.href = '/search'">Go to Search Page</button>
+  <button onclick="window.location.href = '/recommendation'">Go to Recommendation Page</button>
+
+  <h2>Popular Books</h2>
+
+  <div class="popular-books">
+    <div class="book" onclick="window.location.href = '/book1'">
+      <img class="book-image" src="book1.jpg" alt="Book 1">
+      <p>Title: Book 1</p>
+      <p>Author: Author 1</p>
+      <p>Rating: 4.5</p>
+    </div>
+    <div class="book" onclick="window.location.href = '/book2'">
+      <img class="book-image" src="book2.jpg" alt="Book 2">
+      <p>Title: Book 2</p>
+      <p>Author: Author 2</p>
+      <p>Rating: 3.8</p>
+    </div>
+    <div class="book" onclick="window.location.href = '/book3'">
+      <img class="book-image" src="book3.jpg" alt="Book 3">
+      <p>Title: Book 3</p>
+      <p>Author: Author 3</p>
+      <p>Rating: 4.2</p>
+    </div>
+  </div>
+</body>
+</html>
